@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 
 public class DataHandler
@@ -19,10 +20,12 @@ public class DataHandler
 
 	public void ReadFeatureVector(string path)
 	{
+		byte[] data = File.ReadAllBytes(path);
+
 		UInt32 [] header = new UInt32[4];
 		byte[] bytes = new byte[4];
 
-		
+
 
 
 

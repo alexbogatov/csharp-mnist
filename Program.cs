@@ -6,6 +6,10 @@ namespace csharp_mnist
     {
         static void Main(string[] args)
         {
+            var dh = new DataHandler();
+
+            dh.ReadFeatureVector(@"D:\Projects\NN_CPP_Handwriting\ML_Nist\ML_Nist\Data\train-images.idx3-ubyte");
+
             // UInt32 forward = 0x1A2B3C4D;
             // UInt32 reverse = DataHandler.ConvertToLittleEndean(forward);
 
