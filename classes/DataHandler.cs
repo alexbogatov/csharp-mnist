@@ -20,14 +20,55 @@ public class DataHandler
 
 	public void ReadFeatureVector(string path)
 	{
-		byte[] data = File.ReadAllBytes(path);
+		byte[] bytes = File.ReadAllBytes(path);
 
-		UInt32 [] header = new UInt32[4];
-		byte[] bytes = new byte[4];
+		c.w("Reading input file header\tOK\r\n");
 
+		uint [] header = new UInt32[4];
+		int header_size = header.Length * sizeof(uint);
 
+		for (int i = 0; i < 4; i++)
+		{
+			header[i] = ConvertToLittleEndean(BitConverter.ToUInt32(bytes, i * 4));
+		}
 
+		int n_images = (int)header[1];
 
+		int image_width = (int)header[2];
+		int image_height = (int)header[3];
+
+		int image_size = image_width * image_height;
+
+		c.w($"header.n_images\t\t\t{n_images:N0}\r\n");
+		c.w($"header.image_width\t\t{image_width} px\r\n");
+		c.w($"header.image_height\t\t{image_height} px\r\n");
+		c.w($"header.image_size\t\t{image_size} b\r\n");
+
+		for (int i = 0; i < n_images; i++)
+		{
+			var index = header_size + (i * image_size);
+
+			var image_bytes = new byte[image_size];
+
+			Buffer.BlockCopy(bytes, index, image_bytes, 0, image_size);
+
+			DataArray.Add(new Data()
+			{
+				FeatureVector = image_bytes
+			});
+		}
+
+		c.w($"\r\nSuccessfully read {DataArray.Count:N0} vectors.\r\n\r\n");
+	}
+
+	public void ReadFeatureLabels(string path)
+	{
+		byte[] bytes = File.ReadAllBytes(path);
+
+		c.w("Reading label file header\tOK\r\n");
+
+		uint [] header = new UInt32[2];
+		int header_size = header.Length * sizeof(uint);
 
 	}
 
