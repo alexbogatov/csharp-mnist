@@ -1,5 +1,7 @@
 using System;
 using System.IO;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Collections.Generic;
 
 public class DataHandler
@@ -56,9 +58,31 @@ public class DataHandler
 			{
 				FeatureVector = image_bytes
 			});
+
+			SaveImage(image_bytes, image_width, image_height, $"D:\\Projects\\Git\\csharp-mnist\\csharp-mnist\\images\\{i}.png");
 		}
 
 		c.w($"\r\nSuccessfully read {DataArray.Count:N0} vectors.\r\n\r\n");
+	}
+
+	public void SaveImage(byte[] bytes, int width, int height, string filename)
+	{
+		var bitmap = new Bitmap(width, height);
+
+		for (var y = 0; y < height; y++)
+		{
+			for (var x = 0; x < width; x++)
+			{
+				byte b = bytes[y * width + x];
+
+				var color = Color.FromArgb(b, b, b);
+
+				bitmap.SetPixel(x, y, color);
+			}
+		}
+
+		bitmap.Save(filename, ImageFormat.Png);
+		bitmap.Dispose();
 	}
 
 	public void ReadFeatureLabels(string path)

@@ -9,3 +9,9 @@ D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.A
 D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.AssemblyInfo.cs
 D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.dll
 D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.pdb
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.csproj.CopyComplete
