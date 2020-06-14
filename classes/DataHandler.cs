@@ -27,9 +27,7 @@ public class DataHandler
 
 	public static UInt32 ConvertToLittleEndean(UInt32 value)
 	{
-		UInt32 le =  ((UInt32)(value & 0x000000FF)) << 24 | ((UInt32)(value & 0x0000FF00)) << 8 | ((UInt32)(value & 0x00FF0000)) >> 8 |  ((UInt32)(value & 0xFF000000)) >> 24;
-
-		return le;
+		return ((UInt32)(value & 0x000000FF)) << 24 | ((UInt32)(value & 0x0000FF00)) << 8 | ((UInt32)(value & 0x00FF0000)) >> 8 |  ((UInt32)(value & 0xFF000000)) >> 24;
 	}
 
 }
