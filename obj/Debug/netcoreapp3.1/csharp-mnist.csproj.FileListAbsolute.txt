@@ -1,0 +1,11 @@
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\csharp-mnist.exe
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\csharp-mnist.deps.json
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\csharp-mnist.runtimeconfig.json
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\csharp-mnist.runtimeconfig.dev.json
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\csharp-mnist.dll
+D:\Projects\Git\csharp-mnist\csharp-mnist\bin\Debug\netcoreapp3.1\csharp-mnist.pdb
+D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.csprojAssemblyReference.cache
+D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.AssemblyInfoInputs.cache
+D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.AssemblyInfo.cs
+D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.dll
+D:\Projects\Git\csharp-mnist\csharp-mnist\obj\Debug\netcoreapp3.1\csharp-mnist.pdb

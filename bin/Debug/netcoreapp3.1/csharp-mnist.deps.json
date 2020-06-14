@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "csharp-mnist/1.0.0": {
+        "runtime": {
+          "csharp-mnist.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "csharp-mnist/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

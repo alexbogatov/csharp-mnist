@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Github\\CSharp-ML-MNIST\\csharp-mnist\\csharp-mnist.csproj",
+      "projectUniqueName": "D:\\Projects\\Git\\csharp-mnist\\csharp-mnist\\csharp-mnist.csproj",
       "projectName": "csharp-mnist",
-      "projectPath": "D:\\Projects\\Github\\CSharp-ML-MNIST\\csharp-mnist\\csharp-mnist.csproj",
+      "projectPath": "D:\\Projects\\Git\\csharp-mnist\\csharp-mnist\\csharp-mnist.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Github\\CSharp-ML-MNIST\\csharp-mnist\\obj\\",
+      "outputPath": "D:\\Projects\\Git\\csharp-mnist\\csharp-mnist\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

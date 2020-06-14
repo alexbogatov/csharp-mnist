@@ -6,7 +6,13 @@ namespace csharp_mnist
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // UInt32 forward = 0x1A2B3C4D;
+            // UInt32 reverse = DataHandler.ConvertToLittleEndean(forward);
+
+            // Console.WriteLine($"forward={forward:X}");
+            // Console.WriteLine($"reverse={reverse:X}");
+
+            // Console.WriteLine("Hello World!");
         }
     }
 }
