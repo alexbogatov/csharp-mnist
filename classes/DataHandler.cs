@@ -20,6 +20,9 @@ public class DataHandler
 	public void ReadFeatureVector(string path)
 	{
 		UInt32 [] header = new UInt32[4];
+		byte[] bytes = new byte[4];
+
+		
 
 
 
