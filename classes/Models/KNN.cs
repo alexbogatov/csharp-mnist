@@ -47,12 +47,6 @@ public class KNN
 						index = j;
 					}
 				}
-
-				Neighbours.Add(TrainingData[index]);
-
-				min_prev = min;
-
-				min = double.MaxValue;
 			}
 			else
 			{
@@ -66,12 +60,12 @@ public class KNN
 						index = j;
 					}
 				}
-				Neighbours.Add(TrainingData[index]);
-
-				min_prev = min;
-
-				min = double.MaxValue;
 			}
+			Neighbours.Add(TrainingData[index]);
+
+			min_prev = min;
+
+			min = double.MaxValue;
 		}
 	}
 
