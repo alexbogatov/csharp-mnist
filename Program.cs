@@ -14,8 +14,8 @@ namespace csharp_mnist
             dh.SplitData();
             dh.CountClasses();
 
-            // UInt32 forward = 0x1A2B3C4D;
-            // UInt32 reverse = DataHandler.ConvertToLittleEndean(forward);
+            // uint forward = 0x1A2B3C4D;
+            // uint reverse = DataHandler.ConvertToLittleEndean(forward);
 
             // Console.WriteLine($"forward={forward:X}");
             // Console.WriteLine($"reverse={reverse:X}");

@@ -26,7 +26,7 @@ public class DataHandler
 
 		c.w("Reading input file header\tOK\r\n");
 
-		uint [] header = new UInt32[4];
+		uint [] header = new uint[4];
 		int header_size = header.Length * sizeof(uint);
 
 		for (int i = 0; i < header.Length; i++)
@@ -71,7 +71,7 @@ public class DataHandler
 
 		c.w("Reading label file header\tOK\r\n");
 
-		uint [] header = new UInt32[2];
+		uint [] header = new uint[2];
 		int header_size = header.Length * sizeof(uint);
 
 		for (int i = 0; i < header.Length; i++)
@@ -154,9 +154,9 @@ public class DataHandler
 	}
 
 
-	public static UInt32 ConvertToLittleEndean(UInt32 value)
+	public static uint ConvertToLittleEndean(uint value)
 	{
-		return ((UInt32)(value & 0x000000FF)) << 24 | ((UInt32)(value & 0x0000FF00)) << 8 | ((UInt32)(value & 0x00FF0000)) >> 8 |  ((UInt32)(value & 0xFF000000)) >> 24;
+		return ((uint)(value & 0x000000FF)) << 24 | ((uint)(value & 0x0000FF00)) << 8 | ((uint)(value & 0x00FF0000)) >> 8 |  ((uint)(value & 0xFF000000)) >> 24;
 	}
 
 }
