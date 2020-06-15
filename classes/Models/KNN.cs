@@ -135,6 +135,12 @@ public class KNN
 			if (prediction == query_point.Label)
 			{
 				count++;
+
+				query_point.SaveImage($"D:\\Projects\\Git\\csharp-mnist\\csharp-mnist\\images\\{data_index}-OK-{query_point.Label}-as-{prediction}.png");
+			}
+			else
+			{
+				query_point.SaveImage($"D:\\Projects\\Git\\csharp-mnist\\csharp-mnist\\images\\{data_index}-MISS-{query_point.Label}-as-{prediction}.png");
 			}
 			data_index++;
 
