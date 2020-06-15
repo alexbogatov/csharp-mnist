@@ -11,6 +11,9 @@ namespace csharp_mnist
             dh.ReadFeatureVector(@"D:\Projects\NN_CPP_Handwriting\ML_Nist\ML_Nist\Data\train-images.idx3-ubyte");
             dh.ReadFeatureLabels(@"D:\Projects\NN_CPP_Handwriting\ML_Nist\ML_Nist\Data\train-labels.idx1-ubyte");
 
+            dh.SplitData();
+            dh.CountClasses();
+
             // UInt32 forward = 0x1A2B3C4D;
             // UInt32 reverse = DataHandler.ConvertToLittleEndean(forward);
 
